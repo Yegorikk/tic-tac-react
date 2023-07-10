@@ -11,12 +11,12 @@ export function EndingPage() {
   };
 
   const handleNewGame = () => {
-    navigate('/start');
+    navigate('/');
     newGame();
   };
 
   if (!config) {
-    return <Navigate to={'/start'} />;
+    return <Navigate to={'/'} />;
   }
 
   let output;

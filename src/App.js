@@ -11,7 +11,7 @@ function App() {
         <Route path="/" element={<StartingPage />} />
         <Route exact path="/game" element={<BoardPage />} />
         <Route exact path="/end" element={<EndingPage />} />
-        <Route path="*" element={<Navigate to="/tic-tac-react/" replace />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </HashRouter>
   );

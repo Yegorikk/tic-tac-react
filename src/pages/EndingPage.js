@@ -31,7 +31,7 @@ export function EndingPage() {
   return (
     <div id="endingWindow">
       <div id="result">{output}</div>
-      <img src='/images/dancing-color-changing-banana-uqgjzgre642ls20t.gif' alt="" />
+      <img src='images/dancing-color-changing-banana-uqgjzgre642ls20t.gif' alt="" />
       <button onClick={handleRestartGame} id="restartG">Restart</button>
       <button onClick={handleNewGame} id="newG">New game</button>
     </div>

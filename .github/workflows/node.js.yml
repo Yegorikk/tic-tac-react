@@ -41,17 +41,3 @@ jobs:
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v2
-    - name: Set URL
-      uses: actions/github-script@v4
-      with:
-        script: |
-          const repo = context.repo;
-          const octokit = github.getOctokit(process.env.GITHUB_TOKEN);
-          
-          const pagesResponse = await octokit.rest.repos.updatePages({
-            ...repo,
-            source: {
-              branch: 'gh-pages',
-              path: '/tic-tac-react'
-            }
-          });

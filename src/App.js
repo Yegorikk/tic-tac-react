@@ -7,15 +7,15 @@ import { StartingPage } from './pages/StartingPage';
 function App() {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/tic-tac-react'>
       <Routes>
-        <Route path="/start" element={<StartingPage />} />
-        <Route exact path="/game" element={<BoardPage />} />
-        <Route exact path="/end" element={<EndingPage />} />
-        <Route
-          path="*"
-          element={<Navigate to="/start" replace />}
-        />
+          <Route path="/start" element={<StartingPage />} />
+          <Route exact path="/game" element={<BoardPage />} />
+          <Route exact path="/end" element={<EndingPage />} />
+          <Route
+            path="*"
+            element={<Navigate to="/start" replace />}
+          />
       </Routes>
     </BrowserRouter>
   );

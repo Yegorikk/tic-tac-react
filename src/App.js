@@ -14,7 +14,7 @@ function App() {
         <Route exact path="/end" element={<EndingPage />} />
         <Route
           path="*"
-          element={<Navigate to="/" replace />}
+          element={<Navigate to="/tic-tac-react" replace />}
         />
       </Routes>
     </BrowserRouter>

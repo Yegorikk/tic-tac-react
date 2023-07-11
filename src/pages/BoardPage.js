@@ -13,7 +13,7 @@ export function BoardPage() {
     if (result) {
         return <Navigate to={'/end'} />;
     } else if (!config) {
-        return <Navigate to={'/'} />;
+        return <Navigate to={'/start'} />;
     }
     const {
         players,

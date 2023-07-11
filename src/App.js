@@ -9,7 +9,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<StartingPage />} />
+        <Route path="/tic-tac-react" element={<StartingPage />} />
         <Route exact path="/game" element={<BoardPage />} />
         <Route exact path="/end" element={<EndingPage />} />
         <Route
